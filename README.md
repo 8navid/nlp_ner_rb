@@ -30,5 +30,7 @@ Each entry in `dataset_with_entities.json` contains a clinical note, binary labe
     [98, 123, "NON_ADHERENCE"]
   ]
 }
+```
+---
 
-provided by navid danaee
+provided by navid danaee 8navid@gmail.com.
