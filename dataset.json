@@ -1,0 +1,1442 @@
+[
+  {
+    "patient_id": 1,
+    "note": "Patient ID: 1 Date of admission: 2025-01-12 History of present illness: patient does not speak English; communication via interpreter. Lives with spouse. Alert and oriented x3, no signs of dementia. Medication taken regularly, good adherence.",
+    "labels": {
+      "language_barrier": true,
+      "living_alone": false,
+      "cognitive_frailty": false,
+      "non_adherence": false
+    },
+    "entities": [
+      [82, 104, "LANGUAGE_BARRIER"],
+      [106, 132, "LANGUAGE_BARRIER"]
+    ]
+  },
+  {
+    "patient_id": 2,
+    "note": "Patient ID: 2 Date of admission: 2025-01-14 History of present illness: speaks English fluently. Lives alone in an apartment, no cohabitants. Mild cognitive impairment noted, memory problems reported. Occasionally forgets to take pills.",
+    "labels": {
+      "language_barrier": false,
+      "living_alone": true,
+      "cognitive_frailty": true,
+      "non_adherence": true
+    },
+    "entities": [
+      [92, 102, "LIVING_ALONE"],
+      [103, 119, "LIVING_ALONE"],
+      [121, 135, "LIVING_ALONE"],
+      [137, 164, "COGNITIVE_FRAILTY"],
+      [166, 190, "COGNITIVE_FRAILTY"],
+      [192, 222, "NON_ADHERENCE"]
+    ]
+  },
+  {
+    "patient_id": 3,
+    "note": "Patient ID: 3 Date of admission: 2025-01-15 History of present illness: language barrier noted. Family provides interpretation. Lives with daughter; independent in ADLs. Cognition normal, memory intact. Non-adherent to drug regimen, skipped several doses.",
+    "labels": {
+      "language_barrier": true,
+      "living_alone": false,
+      "cognitive_frailty": false,
+      "non_adherence": true
+    },
+    "entities": [
+      [82, 103, "LANGUAGE_BARRIER"],
+      [211, 237, "NON_ADHERENCE"],
+      [239, 260, "NON_ADHERENCE"]
+    ]
+  },
+  {
+    "patient_id": 4,
+    "note": "Patient ID: 4 Date of admission: 2025-01-17 History of present illness: no language barrier. Resides in nursing home. Patient is forgetful, signs of dementia. Medication taken regularly.",
+    "labels": {
+      "language_barrier": false,
+      "living_alone": false,
+      "cognitive_frailty": true,
+      "non_adherence": false
+    },
+    "entities": [
+      [103, 119, "COGNITIVE_FRAILTY"],
+      [121, 139, "COGNITIVE_FRAILTY"]
+    ]
+  },
+  {
+    "patient_id": 5,
+    "note": "Patient ID: 5 Date of admission: 2025-01-19 History of present illness: limited English proficiency, needs interpreter. Lives alone. Alert and oriented, no cognitive impairment. Compliant with therapy, no missed doses.",
+    "labels": {
+      "language_barrier": true,
+      "living_alone": true,
+      "cognitive_frailty": false,
+      "non_adherence": false
+    },
+    "entities": [
+      [82, 108, "LANGUAGE_BARRIER"],
+      [110, 127, "LANGUAGE_BARRIER"],
+      [129, 139, "LIVING_ALONE"]
+    ]
+  },
+  {
+    "patient_id": 6,
+    "note": "Patient ID: 6 Date of admission: 2025-01-22 History of present illness: patient only speaks Spanish; daughter translates for mother. Lives independently but alone. Memory problems reported, frequent forgetfulness. Suspected medication noncompliance.",
+    "labels": {
+      "language_barrier": true,
+      "living_alone": true,
+      "cognitive_frailty": true,
+      "non_adherence": true
+    },
+    "entities": [
+      [82, 108, "LANGUAGE_BARRIER"],
+      [110, 140, "LANGUAGE_BARRIER"],
+      [142, 170, "LIVING_ALONE"],
+      [172, 194, "COGNITIVE_FRAILTY"],
+      [196, 218, "COGNITIVE_FRAILTY"],
+      [220, 251, "NON_ADHERENCE"]
+    ]
+  },
+  {
+    "patient_id": 7,
+    "note": "Patient ID: 7 Date of admission: 2025-01-25 History of present illness: language: fluent English. Married, living together. No cognitive impairment, memory intact. Good adherence.",
+    "labels": {
+      "language_barrier": false,
+      "living_alone": false,
+      "cognitive_frailty": false,
+      "non_adherence": false
+    },
+    "entities": []
+  },
+  {
+    "patient_id": 8,
+    "note": "Patient ID: 8 Date of admission: 2025-01-27 History of present illness: needs interpreter for consultations. Lives with family. Mild cognitive impairment, Alzheimer's disease. Frequently misses medication.",
+    "labels": {
+      "language_barrier": true,
+      "living_alone": false,
+      "cognitive_frailty": true,
+      "non_adherence": true
+    },
+    "entities": [
+      [82, 113, "LANGUAGE_BARRIER"],
+      [134, 161, "COGNITIVE_FRAILTY"],
+      [163, 183, "COGNITIVE_FRAILTY"],
+      [185, 214, "NON_ADHERENCE"]
+    ]
+  },
+  {
+    "patient_id": 9,
+    "note": "Patient ID: 9 Date of admission: 2025-01-28 History of present illness: does not speak English. Lives alone. Memory is generally good but has bad days; no diagnosed dementia. Occasionally forgets to take pills.",
+    "labels": {
+      "language_barrier": true,
+      "living_alone": true,
+      "cognitive_frailty": false,
+      "non_adherence": true
+    },
+    "entities": [
+      [82, 103, "LANGUAGE_BARRIER"],
+      [105, 115, "LIVING_ALONE"],
+      [174, 204, "NON_ADHERENCE"]
+    ]
+  },
+  {
+    "patient_id": 10,
+    "note": "Patient ID: 10 Date of admission: 2025-01-30 History of present illness: no language barrier. Lives with spouse. Alert, cognition normal. Compliant with therapy.",
+    "labels": {
+      "language_barrier": false,
+      "living_alone": false,
+      "cognitive_frailty": false,
+      "non_adherence": false
+    },
+    "entities": []
+  },
+  {
+    "patient_id": 11,
+    "note": "Patient ID: 11 Date of admission: 2025-02-01 History of present illness: communication via interpreter. Lives independently; no family at home. Cognitive decline noted. Non-adherent to drug regimen.",
+    "labels": {
+      "language_barrier": true,
+      "living_alone": true,
+      "cognitive_frailty": true,
+      "non_adherence": true
+    },
+    "entities": [
+      [82, 109, "LANGUAGE_BARRIER"],
+      [111, 132, "LIVING_ALONE"],
+      [134, 154, "LIVING_ALONE"],
+      [156, 179, "COGNITIVE_FRAILTY"],
+      [181, 207, "NON_ADHERENCE"]
+    ]
+  },
+  {
+    "patient_id": 12,
+    "note": "Patient ID: 12 Date of admission: 2025-02-03 History of present illness: language barrier. Family provides interpretation, but patient main language is Spanish. Lives alone. No signs of dementia. Good adherence.",
+    "labels": {
+      "language_barrier": true,
+      "living_alone": true,
+      "cognitive_frailty": false,
+      "non_adherence": false
+    },
+    "entities": [
+      [82, 97, "LANGUAGE_BARRIER"],
+      [99, 127, "LANGUAGE_BARRIER"],
+      [145, 155, "LIVING_ALONE"]
+    ]
+  },
+  {
+    "patient_id": 13,
+    "note": "Patient ID: 13 Date of admission: 2025-02-05 History of present illness: speaks English fluently. Resides in nursing home. Alzheimer's disease, memory problems. Medication taken regularly.",
+    "labels": {
+      "language_barrier": false,
+      "living_alone": false,
+      "cognitive_frailty": true,
+      "non_adherence": false
+    },
+    "entities": [
+      [107, 127, "COGNITIVE_FRAILTY"],
+      [129, 147, "COGNITIVE_FRAILTY"]
+    ]
+  },
+  {
+    "patient_id": 14,
+    "note": "Patient ID: 14 Date of admission: 2025-02-07 History of present illness: limited English proficiency. Lives with daughter. Memory intact, no cognitive issues. Missed several doses this week.",
+    "labels": {
+      "language_barrier": true,
+      "living_alone": false,
+      "cognitive_frailty": false,
+      "non_adherence": true
+    },
+    "entities": [
+      [82, 108, "LANGUAGE_BARRIER"],
+      [161, 195, "NON_ADHERENCE"]
+    ]
+  },
+  {
+    "patient_id": 15,
+    "note": "Patient ID: 15 Date of admission: 2025-02-09 History of present illness: no language barrier. Lives alone. Patient is forgetful, mild cognitive impairment. Compliant with therapy.",
+    "labels": {
+      "language_barrier": false,
+      "living_alone": true,
+      "cognitive_frailty": true,
+      "non_adherence": false
+    },
+    "entities": [
+      [103, 113, "LIVING_ALONE"],
+      [115, 133, "COGNITIVE_FRAILTY"],
+      [135, 160, "COGNITIVE_FRAILTY"]
+    ]
+  },
+  {
+    "patient_id": 16,
+    "note": "Patient ID: 16 Date of admission: 2025-02-11 History of present illness: needs interpreter. Lives with spouse. Alert and oriented, cognition normal. Suspected medication noncompliance – not taking as prescribed.",
+    "labels": {
+      "language_barrier": true,
+      "living_alone": false,
+      "cognitive_frailty": false,
+      "non_adherence": true
+    },
+    "entities": [
+      [82, 98, "LANGUAGE_BARRIER"],
+      [160, 192, "NON_ADHERENCE"],
+      [194, 217, "NON_ADHERENCE"]
+    ]
+  },
+  {
+    "patient_id": 17,
+    "note": "Patient ID: 17 Date of admission: 2025-02-13 History of present illness: language barrier noted. Lives independently but alone. Dementia signs evident. Frequently forgets pills, non-adherent.",
+    "labels": {
+      "language_barrier": true,
+      "living_alone": true,
+      "cognitive_frailty": true,
+      "non_adherence": true
+    },
+    "entities": [
+      [82, 103, "LANGUAGE_BARRIER"],
+      [105, 133, "LIVING_ALONE"],
+      [135, 159, "COGNITIVE_FRAILTY"],
+      [161, 184, "NON_ADHERENCE"],
+      [186, 200, "NON_ADHERENCE"]
+    ]
+  },
+  {
+    "patient_id": 18,
+    "note": "Patient ID: 18 Date of admission: 2025-02-15 History of present illness: no language issues. Lives with family. No cognitive impairment. Good adherence, no missed doses.",
+    "labels": {
+      "language_barrier": false,
+      "living_alone": false,
+      "cognitive_frailty": false,
+      "non_adherence": false
+    },
+    "entities": []
+  },
+  {
+    "patient_id": 19,
+    "note": "Patient ID: 19 Date of admission: 2025-02-17 History of present illness: patient does not speak English, interpreter needed. Lives alone in apartment. Cognitive decline reported, frequent forgetfulness. Adherence seems variable, occasionally skips doses.",
+    "labels": {
+      "language_barrier": true,
+      "living_alone": true,
+      "cognitive_frailty": true,
+      "non_adherence": true
+    },
+    "entities": [
+      [82, 108, "LANGUAGE_BARRIER"],
+      [110, 128, "LANGUAGE_BARRIER"],
+      [130, 140, "LIVING_ALONE"],
+      [141, 152, "LIVING_ALONE"],
+      [154, 179, "COGNITIVE_FRAILTY"],
+      [181, 204, "COGNITIVE_FRAILTY"],
+      [206, 230, "NON_ADHERENCE"],
+      [232, 257, "NON_ADHERENCE"]
+    ]
+  },
+  {
+    "patient_id": 20,
+    "note": "Patient ID: 20 Date of admission: 2025-02-19 History of present illness: speaks English. Lives with spouse. No memory problems, cognition normal. Compliant.",
+    "labels": {
+      "language_barrier": false,
+      "living_alone": false,
+      "cognitive_frailty": false,
+      "non_adherence": false
+    },
+    "entities": []
+  },
+  {
+    "patient_id": 21,
+    "note": "Patient ID: 21 Date of admission: 2025-02-21 History of present illness: language barrier, uses interpreter. Lives independently, no cohabitants. Mild cognitive impairment. Non-adherence suspected due to missed refills.",
+    "labels": {
+      "language_barrier": true,
+      "living_alone": true,
+      "cognitive_frailty": true,
+      "non_adherence": true
+    },
+    "entities": [
+      [82, 97, "LANGUAGE_BARRIER"],
+      [99, 115, "LANGUAGE_BARRIER"],
+      [117, 138, "LIVING_ALONE"],
+      [140, 154, "LIVING_ALONE"],
+      [156, 183, "COGNITIVE_FRAILTY"],
+      [185, 207, "NON_ADHERENCE"],
+      [208, 229, "NON_ADHERENCE"]
+    ]
+  },
+  {
+    "patient_id": 22,
+    "note": "Patient ID: 22 Date of admission: 2025-02-23 History of present illness: no language barrier. Lives alone. Memory intact, alert. Occasionally forgets to take pills – intentional adjustment mentioned.",
+    "labels": {
+      "language_barrier": false,
+      "living_alone": true,
+      "cognitive_frailty": false,
+      "non_adherence": true
+    },
+    "entities": [
+      [105, 115, "LIVING_ALONE"],
+      [116, 131, "NON_ADHERENCE"],
+      [133, 155, "NON_ADHERENCE"],
+      [158, 182, "NON_ADHERENCE"]
+    ]
+  },
+  {
+    "patient_id": 23,
+    "note": "Patient ID: 23 Date of admission: 2025-02-25 History of present illness: daughter translates for mother – patient primary language Spanish. Lives with daughter. Dementia diagnosis. Medication taken regularly.",
+    "labels": {
+      "language_barrier": true,
+      "living_alone": false,
+      "cognitive_frailty": true,
+      "non_adherence": false
+    },
+    "entities": [
+      [82, 131, "LANGUAGE_BARRIER"],
+      [156, 175, "COGNITIVE_FRAILTY"]
+    ]
+  },
+  {
+    "patient_id": 24,
+    "note": "Patient ID: 24 Date of admission: 2025-02-27 History of present illness: English fluent. Lives with family. No cognitive issues. Compliant.",
+    "labels": {
+      "language_barrier": false,
+      "living_alone": false,
+      "cognitive_frailty": false,
+      "non_adherence": false
+    },
+    "entities": []
+  },
+  {
+    "patient_id": 25,
+    "note": "Patient ID: 25 Date of admission: 2025-03-01 History of present illness: limited English proficiency. Lives alone, independent living. Alert, memory intact. Non-adherent to drug regimen – patient states forgets sometimes.",
+    "labels": {
+      "language_barrier": true,
+      "living_alone": true,
+      "cognitive_frailty": false,
+      "non_adherence": true
+    },
+    "entities": [
+      [82, 108, "LANGUAGE_BARRIER"],
+      [110, 120, "LIVING_ALONE"],
+      [122, 140, "LIVING_ALONE"],
+      [166, 191, "NON_ADHERENCE"],
+      [193, 222, "NON_ADHERENCE"]
+    ]
+  },
+  {
+    "patient_id": 26,
+    "note": "Patient speaks only Arabic; all communication goes through a phone interpreter. Lives in a retirement community with a spouse. No cognitive complaints. Takes all medications on time.",
+    "labels": {
+      "language_barrier": true,
+      "living_alone": false,
+      "cognitive_frailty": false,
+      "non_adherence": false
+    },
+    "entities": [
+      [0, 23, "LANGUAGE_BARRIER"],
+      [25, 78, "LANGUAGE_BARRIER"]
+    ]
+  },
+  {
+    "patient_id": 27,
+    "note": "No language problems, English is her first language. She resides alone in a flat. Daughter mentions she often misplaces keys and forgets appointments. Pharmacy reports multiple missed refills.",
+    "labels": {
+      "language_barrier": false,
+      "living_alone": true,
+      "cognitive_frailty": true,
+      "non_adherence": true
+    },
+    "entities": [
+      [49, 73, "LIVING_ALONE"],
+      [75, 100, "COGNITIVE_FRAILTY"],
+      [102, 140, "COGNITIVE_FRAILTY"],
+      [142, 181, "NON_ADHERENCE"]
+    ]
+  },
+  {
+    "patient_id": 28,
+    "note": "Limited English – speaks mainly Ukrainian. Lives with adult son who helps translate. Cognitively intact per MMSE. Compliant with heart failure medications.",
+    "labels": {
+      "language_barrier": true,
+      "living_alone": false,
+      "cognitive_frailty": false,
+      "non_adherence": false
+    },
+    "entities": [
+      [0, 40, "LANGUAGE_BARRIER"]
+    ]
+  },
+  {
+    "patient_id": 29,
+    "note": "English is the patient's native language. He lives by himself in a small house. He has been getting lost in the neighbourhood lately and repeats questions. Wife (separated) states he often stops taking his warfarin when he feels well.",
+    "labels": {
+      "language_barrier": false,
+      "living_alone": true,
+      "cognitive_frailty": true,
+      "non_adherence": true
+    },
+    "entities": [
+      [42, 73, "LIVING_ALONE"],
+      [75, 143, "COGNITIVE_FRAILTY"],
+      [144, 172, "NON_ADHERENCE"],
+      [174, 211, "NON_ADHERENCE"]
+    ]
+  },
+  {
+    "patient_id": 30,
+    "note": "Interpreter needed (Mandarin). Patient moved into a nursing home last month. She is fully oriented with no memory deficits. Medication administration is supervised, so adherence is excellent.",
+    "labels": {
+      "language_barrier": true,
+      "living_alone": false,
+      "cognitive_frailty": false,
+      "non_adherence": false
+    },
+    "entities": [
+      [0, 30, "LANGUAGE_BARRIER"]
+    ]
+  },
+  {
+    "patient_id": 31,
+    "note": "Fluent in English. Lives alone in a senior apartment. Mild forgetfulness noted, but still manages finances. Occasionally misses evening pills but generally reliable.",
+    "labels": {
+      "language_barrier": false,
+      "living_alone": true,
+      "cognitive_frailty": true,
+      "non_adherence": true
+    },
+    "entities": [
+      [19, 52, "LIVING_ALONE"],
+      [54, 81, "COGNITIVE_FRAILTY"],
+      [83, 107, "NON_ADHERENCE"]
+    ]
+  },
+  {
+    "patient_id": 32,
+    "note": "Language: Russian, no English. Uses a video interpreter. Lives with daughter and grandchildren. No signs of dementia. Takes all medications as prescribed.",
+    "labels": {
+      "language_barrier": true,
+      "living_alone": false,
+      "cognitive_frailty": false,
+      "non_adherence": false
+    },
+    "entities": [
+      [0, 29, "LANGUAGE_BARRIER"],
+      [31, 56, "LANGUAGE_BARRIER"]
+    ]
+  },
+  {
+    "patient_id": 33,
+    "note": "No language barrier. Patient is recently widowed and now lives alone. She reports episodes of confusion and has been found wandering. Family concerned she isn't taking her diabetes medication consistently.",
+    "labels": {
+      "language_barrier": false,
+      "living_alone": true,
+      "cognitive_frailty": true,
+      "non_adherence": true
+    },
+    "entities": [
+      [19, 62, "LIVING_ALONE"],
+      [63, 109, "COGNITIVE_FRAILTY"],
+      [110, 135, "NON_ADHERENCE"],
+      [137, 180, "NON_ADHERENCE"]
+    ]
+  },
+  {
+    "patient_id": 34,
+    "note": "Patient has no difficulty communicating in English. He lives in a group home with 24-hour support. Cognitive decline is documented (dementia, moderate stage). All medications are managed by staff.",
+    "labels": {
+      "language_barrier": false,
+      "living_alone": false,
+      "cognitive_frailty": true,
+      "non_adherence": false
+    },
+    "entities": [
+      [72, 140, "COGNITIVE_FRAILTY"]
+    ]
+  },
+  {
+    "patient_id": 35,
+    "note": "Spanish-speaking only; professional interpreter used. Lives independently in her own home. No cognitive issues, alert and oriented. Adherence is good as per home care nurse.",
+    "labels": {
+      "language_barrier": true,
+      "living_alone": true,
+      "cognitive_frailty": false,
+      "non_adherence": false
+    },
+    "entities": [
+      [0, 54, "LANGUAGE_BARRIER"],
+      [55, 93, "LIVING_ALONE"]
+    ]
+  },
+  {
+    "patient_id": 36,
+    "note": "English is primary language. Lives with common-law partner. No signs of cognitive impairment. Patient admits occasionally forgetting his morning medications – 'maybe twice a week'.",
+    "labels": {
+      "language_barrier": false,
+      "living_alone": false,
+      "cognitive_frailty": false,
+      "non_adherence": true
+    },
+    "entities": [
+      [74, 143, "NON_ADHERENCE"]
+    ]
+  },
+  {
+    "patient_id": 37,
+    "note": "Patient only speaks Vietnamese, so appointments are conducted via phone interpreter. She lives alone in a high-rise. Short-term memory is poor, often repeats conversations. Non-adherent to antihypertensives per home BP logs.",
+    "labels": {
+      "language_barrier": true,
+      "living_alone": true,
+      "cognitive_frailty": true,
+      "non_adherence": true
+    },
+    "entities": [
+      [0, 76, "LANGUAGE_BARRIER"],
+      [78, 108, "LIVING_ALONE"],
+      [110, 160, "COGNITIVE_FRAILTY"],
+      [162, 213, "NON_ADHERENCE"]
+    ]
+  },
+  {
+    "patient_id": 38,
+    "note": "Fluent in English. Lives with wife – they just celebrated their 50th anniversary. He is a bit forgetful according to wife, but still drives. Medication compliance is excellent.",
+    "labels": {
+      "language_barrier": false,
+      "living_alone": false,
+      "cognitive_frailty": true,
+      "non_adherence": false
+    },
+    "entities": [
+      [19, 87, "COGNITIVE_FRAILTY"]
+    ]
+  },
+  {
+    "patient_id": 39,
+    "note": "Patient speaks Haitian Creole; uses family (daughter) for interpretation, which is sometimes unreliable. Lives in an assisted‑living facility with own room. Dementia diagnosis, needs reminders for ADLs. Facility administers all meds.",
+    "labels": {
+      "language_barrier": true,
+      "living_alone": false,
+      "cognitive_frailty": true,
+      "non_adherence": false
+    },
+    "entities": [
+      [0, 99, "LANGUAGE_BARRIER"],
+      [148, 167, "COGNITIVE_FRAILTY"]
+    ]
+  },
+  {
+    "patient_id": 40,
+    "note": "No language issues. Lives alone since divorce. Memory and cognition are fully intact. Checked pill box – multiple missed doses, patient says 'I just don't like taking so many pills'.",
+    "labels": {
+      "language_barrier": false,
+      "living_alone": true,
+      "cognitive_frailty": false,
+      "non_adherence": true
+    },
+    "entities": [
+      [18, 41, "LIVING_ALONE"],
+      [43, 83, "NON_ADHERENCE"],
+      [85, 100, "NON_ADHERENCE"],
+      [101, 148, "NON_ADHERENCE"]
+    ]
+  },
+  {
+    "patient_id": 41,
+    "note": "English is fluent. The patient lives in a basement apartment with his brother. He is known for long‑standing schizophrenia; cognition otherwise stable. He is fully adherent to his antipsychotic depot injection.",
+    "labels": {
+      "language_barrier": false,
+      "living_alone": false,
+      "cognitive_frailty": false,
+      "non_adherence": false
+    },
+    "entities": []
+  },
+  {
+    "patient_id": 42,
+    "note": "Patient speaks only Cantonese; all consults require a hospital‑provided interpreter. Lives alone. Recently noted to have word‑finding difficulties and left the stove on twice. Suspected non‑compliance with metformin.",
+    "labels": {
+      "language_barrier": true,
+      "living_alone": true,
+      "cognitive_frailty": true,
+      "non_adherence": true
+    },
+    "entities": [
+      [0, 83, "LANGUAGE_BARRIER"],
+      [85, 95, "LIVING_ALONE"],
+      [97, 152, "COGNITIVE_FRAILTY"],
+      [154, 192, "NON_ADHERENCE"]
+    ]
+  },
+  {
+    "patient_id": 43,
+    "note": "No language barrier. Patient is a long‑distance truck driver, lives alone on the road most of the year. No cognitive issues. Reports he often skips his blood pressure pills because they make him urinate too frequently.",
+    "labels": {
+      "language_barrier": false,
+      "living_alone": true,
+      "cognitive_frailty": false,
+      "non_adherence": true
+    },
+    "entities": [
+      [19, 89, "LIVING_ALONE"],
+      [90, 124, "NON_ADHERENCE"],
+      [125, 190, "NON_ADHERENCE"]
+    ]
+  },
+  {
+    "patient_id": 44,
+    "note": "Polish speaker with very limited English; interpreter used. Resides in a care home. Moderate cognitive impairment (MoCA 18/30). Medications are given by the nurse – 100% compliance.",
+    "labels": {
+      "language_barrier": true,
+      "living_alone": false,
+      "cognitive_frailty": true,
+      "non_adherence": false
+    },
+    "entities": [
+      [0, 58, "LANGUAGE_BARRIER"],
+      [81, 122, "COGNITIVE_FRAILTY"]
+    ]
+  },
+  {
+    "patient_id": 45,
+    "note": "English is her mother tongue. Lives alone in a condo. Complains of memory lapses but formal testing shows no objective impairment (worried well). She is religious about taking her statin and thyroid pill.",
+    "labels": {
+      "language_barrier": false,
+      "living_alone": true,
+      "cognitive_frailty": false,
+      "non_adherence": false
+    },
+    "entities": [
+      [28, 50, "LIVING_ALONE"]
+    ]
+  },
+  {
+    "patient_id": 46,
+    "note": "Only speaks Farsi; daughter is present today to translate. Patient lives with daughter's family. No signs of dementia. Non‑adherent to her inhalers – technique never checked.",
+    "labels": {
+      "language_barrier": true,
+      "living_alone": false,
+      "cognitive_frailty": false,
+      "non_adherence": true
+    },
+    "entities": [
+      [0, 65, "LANGUAGE_BARRIER"],
+      [123, 155, "NON_ADHERENCE"]
+    ]
+  },
+  {
+    "patient_id": 47,
+    "note": "English is his primary language. He just moved to a studio apartment alone after a divorce. He is highly functioning, no cognitive deficits. He admits he 'sometimes forgets' his evening dose when he goes out with friends.",
+    "labels": {
+      "language_barrier": false,
+      "living_alone": true,
+      "cognitive_frailty": false,
+      "non_adherence": true
+    },
+    "entities": [
+      [29, 86, "LIVING_ALONE"],
+      [88, 128, "NON_ADHERENCE"],
+      [130, 185, "NON_ADHERENCE"]
+    ]
+  },
+  {
+    "patient_id": 48,
+    "note": "Patient speaks Romanian; interpreter provided by hospital. Lives alone in a senior residence. Clear cognitive decline: cannot recall recent events, disoriented to time. Non‑adherence flagged by pharmacy – gaps in warfarin refills.",
+    "labels": {
+      "language_barrier": true,
+      "living_alone": true,
+      "cognitive_frailty": true,
+      "non_adherence": true
+    },
+    "entities": [
+      [0, 55, "LANGUAGE_BARRIER"],
+      [57, 93, "LIVING_ALONE"],
+      [95, 156, "COGNITIVE_FRAILTY"],
+      [158, 212, "NON_ADHERENCE"]
+    ]
+  },
+  {
+    "patient_id": 49,
+    "note": "Fluent English. Resides with a roommate in a shared apartment. No cognitive concerns. Fully adherent to ART for HIV – viral load undetectable.",
+    "labels": {
+      "language_barrier": false,
+      "living_alone": false,
+      "cognitive_frailty": false,
+      "non_adherence": false
+    },
+    "entities": []
+  },
+  {
+    "patient_id": 50,
+    "note": "Language barrier: Korean. Uses a professional telephone interpreter. Lives alone. Early Alzheimer's type dementia diagnosed 6 months ago. Frequently misses doses, daughter finds pills all over the house.",
+    "labels": {
+      "language_barrier": true,
+      "living_alone": true,
+      "cognitive_frailty": true,
+      "non_adherence": true
+    },
+    "entities": [
+      [0, 25, "LANGUAGE_BARRIER"],
+      [27, 70, "LANGUAGE_BARRIER"],
+      [72, 82, "LIVING_ALONE"],
+      [84, 132, "COGNITIVE_FRAILTY"],
+      [134, 164, "NON_ADHERENCE"],
+      [166, 213, "NON_ADHERENCE"]
+    ]
+  },
+  {
+    "patient_id": 51,
+    "note": "Patient speaks only Portuguese; all communication requires a hospital interpreter. Lives with his wife in a retirement village. Cognitive assessment normal, MMSE 29/30. Takes medications exactly as prescribed.",
+    "labels": {
+      "language_barrier": true,
+      "living_alone": false,
+      "cognitive_frailty": false,
+      "non_adherence": false
+    },
+    "entities": [
+      [0, 77, "LANGUAGE_BARRIER"]
+    ]
+  },
+  {
+    "patient_id": 52,
+    "note": "Fluent in English. Lives alone in a ground-floor unit since husband passed away two years ago. Reports increasing forgetfulness, missed two specialist appointments last month. Pharmacy notes irregular pickup of levothyroxine.",
+    "labels": {
+      "language_barrier": false,
+      "living_alone": true,
+      "cognitive_frailty": true,
+      "non_adherence": true
+    },
+    "entities": [
+      [19, 96, "LIVING_ALONE"],
+      [98, 142, "COGNITIVE_FRAILTY"],
+      [144, 194, "COGNITIVE_FRAILTY"],
+      [196, 244, "NON_ADHERENCE"]
+    ]
+  },
+  {
+    "patient_id": 53,
+    "note": "No English – speaks Somali. Uses a video interpreter service. Resides with extended family (sister, brother-in-law, nieces). No cognitive complaints. Fully adherent to antiretroviral regimen.",
+    "labels": {
+      "language_barrier": true,
+      "living_alone": false,
+      "cognitive_frailty": false,
+      "non_adherence": false
+    },
+    "entities": [
+      [0, 60, "LANGUAGE_BARRIER"]
+    ]
+  },
+  {
+    "patient_id": 54,
+    "note": "English is native language. Lives by himself in rural property. Word-finding difficulties becoming apparent, family worries about his driving. Patient stopped taking statin three months ago because he read something online.",
+    "labels": {
+      "language_barrier": false,
+      "living_alone": true,
+      "cognitive_frailty": true,
+      "non_adherence": true
+    },
+    "entities": [
+      [27, 60, "LIVING_ALONE"],
+      [62, 129, "COGNITIVE_FRAILTY"],
+      [131, 156, "NON_ADHERENCE"],
+      [158, 210, "NON_ADHERENCE"]
+    ]
+  },
+  {
+    "patient_id": 55,
+    "note": "Interpreter requested: Turkish. Patient resides in a nursing home with full-time care. Alert and oriented, no dementia. All medications administered by registered nurses – 100% compliance.",
+    "labels": {
+      "language_barrier": true,
+      "living_alone": false,
+      "cognitive_frailty": false,
+      "non_adherence": false
+    },
+    "entities": [
+      [0, 28, "LANGUAGE_BARRIER"]
+    ]
+  },
+  {
+    "patient_id": 56,
+    "note": "Speaks English well, though with accent. Lives alone in a city apartment. Mild cognitive impairment diagnosed last year, manages with lists and phone reminders. Occasionally misses afternoon doses but catches up next day.",
+    "labels": {
+      "language_barrier": false,
+      "living_alone": true,
+      "cognitive_frailty": true,
+      "non_adherence": true
+    },
+    "entities": [
+      [31, 62, "LIVING_ALONE"],
+      [64, 133, "COGNITIVE_FRAILTY"],
+      [135, 183, "NON_ADHERENCE"]
+    ]
+  },
+  {
+    "patient_id": 57,
+    "note": "Language: French only, no English. Hospital interpreter present. Lives with adult children. No cognitive issues. Takes all heart medications daily without fail.",
+    "labels": {
+      "language_barrier": true,
+      "living_alone": false,
+      "cognitive_frailty": false,
+      "non_adherence": false
+    },
+    "entities": [
+      [0, 33, "LANGUAGE_BARRIER"],
+      [35, 63, "LANGUAGE_BARRIER"]
+    ]
+  },
+  {
+    "patient_id": 58,
+    "note": "No language barrier. Recently separated and now living alone. Has been showing early signs of dementia – getting lost on familiar routes. Wife reports he often refuses to take his diabetes medication.",
+    "labels": {
+      "language_barrier": false,
+      "living_alone": true,
+      "cognitive_frailty": true,
+      "non_adherence": true
+    },
+    "entities": [
+      [19, 54, "LIVING_ALONE"],
+      [56, 123, "COGNITIVE_FRAILTY"],
+      [124, 149, "NON_ADHERENCE"],
+      [151, 184, "NON_ADHERENCE"]
+    ]
+  },
+  {
+    "patient_id": 59,
+    "note": "English is primary language. Lives in a supported accommodation facility with shared dining. Moderate dementia documented, needs prompts for personal care. Facility gives all medications on schedule.",
+    "labels": {
+      "language_barrier": false,
+      "living_alone": false,
+      "cognitive_frailty": true,
+      "non_adherence": false
+    },
+    "entities": [
+      [27, 141, "COGNITIVE_FRAILTY"]
+    ]
+  },
+  {
+    "patient_id": 60,
+    "note": "Only speaks Bengali; interpreter booked for all visits. Lives alone in a council flat. Oriented to time, place, person. Medication compliance reported as good by visiting district nurse.",
+    "labels": {
+      "language_barrier": true,
+      "living_alone": true,
+      "cognitive_frailty": false,
+      "non_adherence": false
+    },
+    "entities": [
+      [0, 52, "LANGUAGE_BARRIER"],
+      [54, 85, "LIVING_ALONE"]
+    ]
+  },
+  {
+    "patient_id": 61,
+    "note": "English fluent. Lives with long-term partner. No signs of cognitive impairment. Patient admits to taking his blood pressure medication only when he 'feels stressed' – maybe twice weekly.",
+    "labels": {
+      "language_barrier": false,
+      "living_alone": false,
+      "cognitive_frailty": false,
+      "non_adherence": true
+    },
+    "entities": [
+      [57, 124, "NON_ADHERENCE"],
+      [126, 155, "NON_ADHERENCE"]
+    ]
+  },
+  {
+    "patient_id": 62,
+    "note": "Patient speaks Urdu; all communication requires telephone interpreter. Lives alone since children moved abroad. Short-term memory significantly impaired, cannot remember recent conversations. Non-adherent to multiple medications per GP records.",
+    "labels": {
+      "language_barrier": true,
+      "living_alone": true,
+      "cognitive_frailty": true,
+      "non_adherence": true
+    },
+    "entities": [
+      [0, 61, "LANGUAGE_BARRIER"],
+      [63, 101, "LIVING_ALONE"],
+      [103, 169, "COGNITIVE_FRAILTY"],
+      [171, 222, "NON_ADHERENCE"]
+    ]
+  },
+  {
+    "patient_id": 63,
+    "note": "English is his first language. Lives with wife of 40 years. Some age-related forgetfulness but no dementia. Perfect adherence to his Parkinson's medication schedule.",
+    "labels": {
+      "language_barrier": false,
+      "living_alone": false,
+      "cognitive_frailty": false,
+      "non_adherence": false
+    },
+    "entities": []
+  },
+  {
+    "patient_id": 64,
+    "note": "Language: Tagalog, limited English. Family member provides ad-hoc translation. Lives in a multi-generational household. Early cognitive decline noted by family – repeats stories often. Medications managed by daughter.",
+    "labels": {
+      "language_barrier": true,
+      "living_alone": false,
+      "cognitive_frailty": true,
+      "non_adherence": false
+    },
+    "entities": [
+      [0, 80, "LANGUAGE_BARRIER"],
+      [117, 170, "COGNITIVE_FRAILTY"]
+    ]
+  },
+  {
+    "patient_id": 65,
+    "note": "Fluent English speaker. Has lived alone since her mother died last spring. Fully alert and cognitively intact. Discontinued antidepressant abruptly because she felt better – now experiencing withdrawal.",
+    "labels": {
+      "language_barrier": false,
+      "living_alone": true,
+      "cognitive_frailty": false,
+      "non_adherence": true
+    },
+    "entities": [
+      [21, 75, "LIVING_ALONE"],
+      [76, 113, "NON_ADHERENCE"],
+      [115, 169, "NON_ADHERENCE"]
+    ]
+  },
+  {
+    "patient_id": 66,
+    "note": "Patient speaks Dari; professional interpreter used for all consultations. Lives independently in a one-bedroom unit. No cognitive concerns. Takes medications regularly, uses a Webster pack.",
+    "labels": {
+      "language_barrier": true,
+      "living_alone": true,
+      "cognitive_frailty": false,
+      "non_adherence": false
+    },
+    "entities": [
+      [0, 65, "LANGUAGE_BARRIER"],
+      [67, 108, "LIVING_ALONE"]
+    ]
+  },
+  {
+    "patient_id": 67,
+    "note": "English is her mother tongue. Resides in a granny flat attached to her son's home. Mild dementia, sundowning episodes reported. Son says she often refuses evening medications.",
+    "labels": {
+      "language_barrier": false,
+      "living_alone": false,
+      "cognitive_frailty": true,
+      "non_adherence": true
+    },
+    "entities": [
+      [27, 102, "COGNITIVE_FRAILTY"],
+      [104, 161, "NON_ADHERENCE"]
+    ]
+  },
+  {
+    "patient_id": 68,
+    "note": "No English – speaks Amharic. Uses hospital translation service. Lives with spouse. Cognition within normal limits. Excellent compliance with post-transplant immunosuppressants.",
+    "labels": {
+      "language_barrier": true,
+      "living_alone": false,
+      "cognitive_frailty": false,
+      "non_adherence": false
+    },
+    "entities": [
+      [0, 56, "LANGUAGE_BARRIER"]
+    ]
+  },
+  {
+    "patient_id": 69,
+    "note": "English is primary language. Widower, lives alone in a retirement villa. Significant cognitive decline over 18 months, now needs help with finances. Pharmacy reports sporadic pickup of insulin.",
+    "labels": {
+      "language_barrier": false,
+      "living_alone": true,
+      "cognitive_frailty": true,
+      "non_adherence": true
+    },
+    "entities": [
+      [34, 72, "LIVING_ALONE"],
+      [74, 137, "COGNITIVE_FRAILTY"],
+      [139, 180, "NON_ADHERENCE"]
+    ]
+  },
+  {
+    "patient_id": 70,
+    "note": "Speaks only Greek; interpreter arranged. Lives in a high-care nursing facility. Severe Alzheimer's, nonverbal. All medications crushed and administered by nursing staff.",
+    "labels": {
+      "language_barrier": true,
+      "living_alone": false,
+      "cognitive_frailty": true,
+      "non_adherence": false
+    },
+    "entities": [
+      [0, 42, "LANGUAGE_BARRIER"],
+      [86, 117, "COGNITIVE_FRAILTY"]
+    ]
+  },
+  {
+    "patient_id": 71,
+    "note": "Fluent English. Lives alone in a small townhouse. No cognitive deficits, very sharp for age 82. Self-reports excellent medication adherence, uses an alarm system.",
+    "labels": {
+      "language_barrier": false,
+      "living_alone": true,
+      "cognitive_frailty": false,
+      "non_adherence": false
+    },
+    "entities": [
+      [15, 48, "LIVING_ALONE"]
+    ]
+  },
+  {
+    "patient_id": 72,
+    "note": "Language barrier: Punjabi. Video interpreter used. Lives with married daughter and grandchildren. Memory is intact per GP assessment. Takes all medications with breakfast.",
+    "labels": {
+      "language_barrier": true,
+      "living_alone": false,
+      "cognitive_frailty": false,
+      "non_adherence": false
+    },
+    "entities": [
+      [0, 26, "LANGUAGE_BARRIER"],
+      [28, 52, "LANGUAGE_BARRIER"]
+    ]
+  },
+  {
+    "patient_id": 73,
+    "note": "English speaker. Has lived alone since divorce 10 years ago. Early Alzheimer's diagnosed, still in denial. Patient admits he doesn't see the point of taking cholesterol medication.",
+    "labels": {
+      "language_barrier": false,
+      "living_alone": true,
+      "cognitive_frailty": true,
+      "non_adherence": true
+    },
+    "entities": [
+      [16, 54, "LIVING_ALONE"],
+      [56, 98, "COGNITIVE_FRAILTY"],
+      [100, 166, "NON_ADHERENCE"]
+    ]
+  },
+  {
+    "patient_id": 74,
+    "note": "Patient speaks Serbian; interpreter utilized. Lives in a group home for adults with disabilities. No cognitive impairment. Supervised medication administration ensures full compliance.",
+    "labels": {
+      "language_barrier": true,
+      "living_alone": false,
+      "cognitive_frailty": false,
+      "non_adherence": false
+    },
+    "entities": [
+      [0, 45, "LANGUAGE_BARRIER"]
+    ]
+  },
+  {
+    "patient_id": 75,
+    "note": "No language barrier. Lives with his mother who is his primary carer. Moderate intellectual disability, not dementia. Mother reports he sometimes spits out his tablets.",
+    "labels": {
+      "language_barrier": false,
+      "living_alone": false,
+      "cognitive_frailty": false,
+      "non_adherence": true
+    },
+    "entities": [
+      [89, 138, "NON_ADHERENCE"]
+    ]
+  },
+  {
+    "patient_id": 76,
+    "note": "Only speaks Tamil; hospital provides interpreter. Lives alone in a bedsit. Diagnosed with vascular dementia after a stroke. Missed several warfarin doses, INR subtherapeutic.",
+    "labels": {
+      "language_barrier": true,
+      "living_alone": true,
+      "cognitive_frailty": true,
+      "non_adherence": true
+    },
+    "entities": [
+      [0, 49, "LANGUAGE_BARRIER"],
+      [51, 74, "LIVING_ALONE"],
+      [76, 120, "COGNITIVE_FRAILTY"],
+      [122, 170, "NON_ADHERENCE"]
+    ]
+  },
+  {
+    "patient_id": 77,
+    "note": "English first language. Lives with his wife in a retirement community. Mild memory issues attributed to normal aging – MMSE 27. Compliant with all prescribed medications.",
+    "labels": {
+      "language_barrier": false,
+      "living_alone": false,
+      "cognitive_frailty": false,
+      "non_adherence": false
+    },
+    "entities": []
+  },
+  {
+    "patient_id": 78,
+    "note": "Language barrier: Khmer. Daughter provides interpretation during visits. Resides alone in a housing commission flat. Cognitive decline obvious – cannot remember medications. Non-adherence to diabetes regimen flagged by endocrinologist.",
+    "labels": {
+      "language_barrier": true,
+      "living_alone": true,
+      "cognitive_frailty": true,
+      "non_adherence": true
+    },
+    "entities": [
+      [0, 23, "LANGUAGE_BARRIER"],
+      [25, 70, "LANGUAGE_BARRIER"],
+      [72, 113, "LIVING_ALONE"],
+      [115, 164, "COGNITIVE_FRAILTY"],
+      [166, 223, "NON_ADHERENCE"]
+    ]
+  },
+  {
+    "patient_id": 79,
+    "note": "Speaks English fluently. Lives alone in a penthouse apartment. No cognitive concerns whatsoever. Stopped all medications cold turkey after watching a documentary – now hypertensive crisis.",
+    "labels": {
+      "language_barrier": false,
+      "living_alone": true,
+      "cognitive_frailty": false,
+      "non_adherence": true
+    },
+    "entities": [
+      [22, 58, "LIVING_ALONE"],
+      [59, 121, "NON_ADHERENCE"],
+      [123, 169, "NON_ADHERENCE"]
+    ]
+  },
+  {
+    "patient_id": 80,
+    "note": "Patient speaks Farsi; professional interpreter provided. Lives with husband and unmarried son. No dementia, cognitively intact. Takes medications precisely as directed – uses pill organiser.",
+    "labels": {
+      "language_barrier": true,
+      "living_alone": false,
+      "cognitive_frailty": false,
+      "non_adherence": false
+    },
+    "entities": [
+      [0, 53, "LANGUAGE_BARRIER"]
+    ]
+  },
+  {
+    "patient_id": 81,
+    "note": "English is native language. Lives alone in government-subsidised senior housing. Advanced dementia, requires home care workers four times daily. Medications are constantly missed when carers don't supervise.",
+    "labels": {
+      "language_barrier": false,
+      "living_alone": true,
+      "cognitive_frailty": true,
+      "non_adherence": true
+    },
+    "entities": [
+      [27, 80, "LIVING_ALONE"],
+      [82, 142, "COGNITIVE_FRAILTY"],
+      [144, 206, "NON_ADHERENCE"]
+    ]
+  },
+  {
+    "patient_id": 82,
+    "note": "No English – speaks Croatian. Interpreter arranged through hospital. Resides in a dementia-specific care unit. Severe cognitive impairment, bedbound. All medications given via PEG tube.",
+    "labels": {
+      "language_barrier": true,
+      "living_alone": false,
+      "cognitive_frailty": true,
+      "non_adherence": false
+    },
+    "entities": [
+      [0, 27, "LANGUAGE_BARRIER"],
+      [29, 67, "LANGUAGE_BARRIER"],
+      [91, 138, "COGNITIVE_FRAILTY"]
+    ]
+  },
+  {
+    "patient_id": 83,
+    "note": "Fluent English. Lives alone in a cabin in the mountains. Very independent, no cognitive issues. Reports he occasionally forgets to pack medications when travelling – maybe 3-4 times yearly.",
+    "labels": {
+      "language_barrier": false,
+      "living_alone": true,
+      "cognitive_frailty": false,
+      "non_adherence": true
+    },
+    "entities": [
+      [15, 52, "LIVING_ALONE"],
+      [53, 106, "NON_ADHERENCE"],
+      [108, 148, "NON_ADHERENCE"]
+    ]
+  },
+  {
+    "patient_id": 84,
+    "note": "Language: Japanese, minimal English. Phone interpreter used. Lives with daughter and her family. No signs of cognitive impairment. Adherence to medications described as meticulous.",
+    "labels": {
+      "language_barrier": true,
+      "living_alone": false,
+      "cognitive_frailty": false,
+      "non_adherence": false
+    },
+    "entities": [
+      [0, 37, "LANGUAGE_BARRIER"],
+      [39, 63, "LANGUAGE_BARRIER"]
+    ]
+  },
+  {
+    "patient_id": 85,
+    "note": "English speaker. Lives alone after partner moved to nursing home. Cognitive assessment shows moderate impairment, probable Alzheimer's. Community nurse finds medications untouched days after filling the dosette box.",
+    "labels": {
+      "language_barrier": false,
+      "living_alone": true,
+      "cognitive_frailty": true,
+      "non_adherence": true
+    },
+    "entities": [
+      [17, 62, "LIVING_ALONE"],
+      [64, 121, "COGNITIVE_FRAILTY"],
+      [123, 193, "NON_ADHERENCE"]
+    ]
+  },
+  {
+    "patient_id": 86,
+    "note": "Patient speaks only Albanian; interpreter booked. Lives in a shared house with three other elderly residents. No cognitive deficits. Medication administration supervised daily by a care attendant.",
+    "labels": {
+      "language_barrier": true,
+      "living_alone": false,
+      "cognitive_frailty": false,
+      "non_adherence": false
+    },
+    "entities": [
+      [0, 48, "LANGUAGE_BARRIER"]
+    ]
+  },
+  {
+    "patient_id": 87,
+    "note": "No language barrier. Lives with her identical twin sister. Both are cognitively sharp at 90. Adherence is excellent – they check each other's medications.",
+    "labels": {
+      "language_barrier": false,
+      "living_alone": false,
+      "cognitive_frailty": false,
+      "non_adherence": false
+    },
+    "entities": []
+  },
+  {
+    "patient_id": 88,
+    "note": "Language barrier: Swahili. Interpreters used for all medical encounters. Lives alone in a studio apartment. Dementia with Lewy bodies diagnosed last year, hallucinations present. Medications often found in odd places – clearly not taken.",
+    "labels": {
+      "language_barrier": true,
+      "living_alone": true,
+      "cognitive_frailty": true,
+      "non_adherence": true
+    },
+    "entities": [
+      [0, 27, "LANGUAGE_BARRIER"],
+      [29, 74, "LANGUAGE_BARRIER"],
+      [76, 109, "LIVING_ALONE"],
+      [111, 176, "COGNITIVE_FRAILTY"],
+      [178, 229, "NON_ADHERENCE"]
+    ]
+  },
+  {
+    "patient_id": 89,
+    "note": "Fluent English. Lives in a monastic community with other nuns. Age-related memory decline but fully functional. Compliant with her simple medication regimen.",
+    "labels": {
+      "language_barrier": false,
+      "living_alone": false,
+      "cognitive_frailty": false,
+      "non_adherence": false
+    },
+    "entities": []
+  },
+  {
+    "patient_id": 90,
+    "note": "Only speaks Burmese; uses hospital translation services. Lives alone in supported accommodation for refugees. No cognitive deficit. Takes medications inconsistently due to misunderstanding instructions – language barrier affecting health literacy.",
+    "labels": {
+      "language_barrier": true,
+      "living_alone": true,
+      "cognitive_frailty": false,
+      "non_adherence": true
+    },
+    "entities": [
+      [0, 54, "LANGUAGE_BARRIER"],
+      [56, 107, "LIVING_ALONE"],
+      [108, 173, "NON_ADHERENCE"],
+      [175, 225, "NON_ADHERENCE"]
+    ]
+  },
+  {
+    "patient_id": 91,
+    "note": "English is his primary language. Lives with wife and disabled son. Early Parkinson's dementia noted. Wife manages medications, says he is 100% adherent to the schedule she sets.",
+    "labels": {
+      "language_barrier": false,
+      "living_alone": false,
+      "cognitive_frailty": true,
+      "non_adherence": false
+    },
+    "entities": [
+      [56, 88, "COGNITIVE_FRAILTY"]
+    ]
+  },
+  {
+    "patient_id": 92,
+    "note": "Speaks Hindi; interpreter provided. Lives alone in a rented room. Fully oriented, no cognitive impairment. Struggles to afford medications, often skips doses to extend supply.",
+    "labels": {
+      "language_barrier": true,
+      "living_alone": true,
+      "cognitive_frailty": false,
+      "non_adherence": true
+    },
+    "entities": [
+      [0, 36, "LANGUAGE_BARRIER"],
+      [38, 66, "LIVING_ALONE"],
+      [68, 117, "NON_ADHERENCE"],
+      [119, 149, "NON_ADHERENCE"]
+    ]
+  },
+  {
+    "patient_id": 93,
+    "note": "No language barrier. Lives alone after children moved interstate. Very mild cognitive changes – occasionally misplaces items, no functional impact. Takes all medications religiously.",
+    "labels": {
+      "language_barrier": false,
+      "living_alone": true,
+      "cognitive_frailty": false,
+      "non_adherence": false
+    },
+    "entities": [
+      [19, 56, "LIVING_ALONE"]
+    ]
+  },
+  {
+    "patient_id": 94,
+    "note": "Language: Nepali, no English. Family member interprets. Lives with nephew. Clear cognitive impairment – cannot remember year or president. Family ensures medications are given on time.",
+    "labels": {
+      "language_barrier": true,
+      "living_alone": false,
+      "cognitive_frailty": true,
+      "non_adherence": false
+    },
+    "entities": [
+      [0, 30, "LANGUAGE_BARRIER"],
+      [32, 58, "LANGUAGE_BARRIER"],
+      [78, 133, "COGNITIVE_FRAILTY"]
+    ]
+  },
+  {
+    "patient_id": 95,
+    "note": "English is mother tongue. Has lived alone in the same house for 60 years. Fully independent, no cognitive decline evident. Intentionally stopped taking warfarin because of bruising – did not inform GP.",
+    "labels": {
+      "language_barrier": false,
+      "living_alone": true,
+      "cognitive_frailty": false,
+      "non_adherence": true
+    },
+    "entities": [
+      [24, 67, "LIVING_ALONE"],
+      [69, 133, "NON_ADHERENCE"]
+    ]
+  },
+  {
+    "patient_id": 96,
+    "note": "Patient speaks only Italian; interpreter utilized. Lives in a retirement home with own apartment. Mild cognitive decline, uses memory aids effectively. Medications administered by visiting nurse.",
+    "labels": {
+      "language_barrier": true,
+      "living_alone": false,
+      "cognitive_frailty": true,
+      "non_adherence": false
+    },
+    "entities": [
+      [0, 48, "LANGUAGE_BARRIER"],
+      [92, 145, "COGNITIVE_FRAILTY"]
+    ]
+  },
+  {
+    "patient_id": 97,
+    "note": "Fluent English. Lives with his grown son and daughter-in-law. No memory problems. Non-adherent to antidepressants – skips doses on weekends when drinking alcohol.",
+    "labels": {
+      "language_barrier": false,
+      "living_alone": false,
+      "cognitive_frailty": false,
+      "non_adherence": true
+    },
+    "entities": [
+      [57, 126, "NON_ADHERENCE"]
+    ]
+  },
+  {
+    "patient_id": 98,
+    "note": "Language barrier: Kurdish. Professional interpreter provided by health service. Lives alone in emergency housing. Cognitive assessment normal. Takes medications sporadically due to chaotic lifestyle.",
+    "labels": {
+      "language_barrier": true,
+      "living_alone": true,
+      "cognitive_frailty": false,
+      "non_adherence": true
+    },
+    "entities": [
+      [0, 26, "LANGUAGE_BARRIER"],
+      [28, 81, "LANGUAGE_BARRIER"],
+      [83, 115, "LIVING_ALONE"],
+      [116, 171, "NON_ADHERENCE"]
+    ]
+  },
+  {
+    "patient_id": 99,
+    "note": "No language barrier. Lives in a convent with other sisters, communal lifestyle. Diagnosed with Alzheimer's two years ago, progressing slowly. All medications supervised by infirmary staff.",
+    "labels": {
+      "language_barrier": false,
+      "living_alone": false,
+      "cognitive_frailty": true,
+      "non_adherence": false
+    },
+    "entities": [
+      [19, 112, "COGNITIVE_FRAILTY"]
+    ]
+  },
+  {
+    "patient_id": 100,
+    "note": "Speaks only Pashto; interpreter essential. Lives alone in a house he built decades ago. Severe dementia, wanders at night. Medications are barely taken – community nurse finds them scattered.",
+    "labels": {
+      "language_barrier": true,
+      "living_alone": true,
+      "cognitive_frailty": true,
+      "non_adherence": true
+    },
+    "entities": [
+      [0, 43, "LANGUAGE_BARRIER"],
+      [45, 89, "LIVING_ALONE"],
+      [91, 128, "COGNITIVE_FRAILTY"],
+      [130, 188, "NON_ADHERENCE"]
+    ]
+  }
+]
