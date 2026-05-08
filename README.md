@@ -4,7 +4,7 @@
 [![spaCy](https://img.shields.io/badge/spaCy-3.2-green.svg)](https://spacy.io)
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-A reproducible implementation of **ten Hoope et al. (2025)** — *"Applying text-mining to clinical notes: the identification of patient characteristics from electronic health records (EHRs)"* — *BMC Medical Informatics and Decision Making*, 25(Suppl 3), 302. [https://doi.org/10.1186/s12911-025-03137-x](https://doi.org/10.1186/s12911-025-03137-x)
+An approach inspired by the **ten Hoope et al. (2025)** — *"Applying text-mining to clinical notes: the identification of patient characteristics from electronic health records (EHRs)"* — *BMC Medical Informatics and Decision Making*, 25(Suppl 3), 302. [https://doi.org/10.1186/s12911-025-03137-x](https://doi.org/10.1186/s12911-025-03137-x)
 
 This repository compares **rule-based SQL-like queries** with **spaCy v3.2's default transition-based NER architecture** (`MultiHashEmbed` token encoder → 4-layer `MaxoutWindowEncoder` CNN with residual connections → stack/buffer parser predicting BILUO actions), trained from scratch without pre-trained embeddings on manually annotated clinical notes, to extract four patient characteristics: **language barrier**, **living alone**, **cognitive frailty**, and **non-adherence**. Evaluation uses recall, specificity, precision, NPV, and F1-score on held-out test and validation sets.
 
@@ -34,6 +34,12 @@ Each entry in `dataset_with_entities.json` contains a clinical note, binary labe
 ---
 
 ## Usage
+
+### Install dependencies
+
+```bash
+pip install spacy==3.2.0 scikit-learn==1.3.0
+```
 
 ### Train Models
 
