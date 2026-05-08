@@ -33,4 +33,35 @@ Each entry in `dataset_with_entities.json` contains a clinical note, binary labe
 ```
 ---
 
+## Usage
+
+### Train Models
+
+```bash
+python article.py
+```
+
+This loads the annotated dataset, applies rule-based predictions using regex patterns, trains one blank spaCy NER model per characteristic with early stopping, evaluates on held-out test and validation sets, saves trained models and rule files, and writes a full report to `report.txt`.
+
+### Predict on New Notes
+
+```bash
+python predict.py
+```
+
+Paste any clinical note at the prompt. The script prints side-by-side predictions from both the rule-based system and the four NER models:
+
+```text
+> Patient only speaks Arabic. Lives alone. Often forgets medications.
+
+language_barrier      Rule‑based: True    NER: True
+living_alone          Rule‑based: True    NER: True
+cognitive_frailty     Rule‑based: True    NER: True
+non_adherence         Rule‑based: True    NER: True
+```
+```
+
+
+---
+
 provided by navid danaee 8navid@gmail.com.
