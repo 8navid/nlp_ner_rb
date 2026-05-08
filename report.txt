@@ -1,0 +1,76 @@
+Loaded 100 patients.
+Train: 70  Test: 15  Validation: 15
+  language_barrier: 34 training examples with entities
+  living_alone: 36 training examples with entities
+  cognitive_frailty: 33 training examples with entities
+  non_adherence: 34 training examples with entities
+
+Training NER for LANGUAGE_BARRIER ...
+    Epoch 10/60, Train Loss: 18.9366
+    Epoch 20/60, Train Loss: 8.4974
+    Epoch 30/60, Train Loss: 3.1204
+    Epoch 40/60, Train Loss: 0.2715
+    Epoch 50/60, Train Loss: 3.8505
+    Epoch 60/60, Train Loss: 6.0006
+    Restored best model (loss: 0.0062)
+  Saved to models_language_barrier/
+
+Training NER for LIVING_ALONE ...
+    Epoch 10/60, Train Loss: 35.8276
+    Epoch 20/60, Train Loss: 23.4152
+    Epoch 30/60, Train Loss: 13.6507
+    Epoch 40/60, Train Loss: 12.3579
+    Epoch 50/60, Train Loss: 2.8270
+    Epoch 60/60, Train Loss: 4.9786
+    Restored best model (loss: 2.0303)
+  Saved to models_living_alone/
+
+Training NER for COGNITIVE_FRAILTY ...
+    Epoch 10/60, Train Loss: 40.5481
+    Epoch 20/60, Train Loss: 24.1935
+    Epoch 30/60, Train Loss: 7.7565
+    Epoch 40/60, Train Loss: 14.8486
+    Epoch 50/60, Train Loss: 3.4742
+    Epoch 60/60, Train Loss: 2.6407
+    Restored best model (loss: 2.6407)
+  Saved to models_cognitive_frailty/
+
+Training NER for NON_ADHERENCE ...
+    Epoch 10/60, Train Loss: 37.6318
+    Epoch 20/60, Train Loss: 17.9025
+    Epoch 30/60, Train Loss: 9.0766
+    Epoch 40/60, Train Loss: 0.0002
+    Epoch 50/60, Train Loss: 14.4194
+    Epoch 60/60, Train Loss: 1.0590
+    Restored best model (loss: 0.0002)
+  Saved to models_non_adherence/
+
+--- Test set ---
+
+language_barrier      RB: {'recall': np.float64(0.8), 'specificity': np.float64(1.0), 'precision': np.float64(1.0), 'NPV': np.float64(0.714), 'F1': np.float64(0.889)}
+                      NER: {'recall': np.float64(1.0), 'specificity': np.float64(1.0), 'precision': np.float64(1.0), 'NPV': np.float64(1.0), 'F1': np.float64(1.0)}
+
+living_alone          RB: {'recall': np.float64(0.857), 'specificity': np.float64(1.0), 'precision': np.float64(1.0), 'NPV': np.float64(0.889), 'F1': np.float64(0.923)}
+                      NER: {'recall': np.float64(0.429), 'specificity': np.float64(1.0), 'precision': np.float64(1.0), 'NPV': np.float64(0.667), 'F1': np.float64(0.6)}
+
+cognitive_frailty     RB: {'recall': np.float64(1.0), 'specificity': np.float64(1.0), 'precision': np.float64(1.0), 'NPV': np.float64(1.0), 'F1': np.float64(1.0)}
+                      NER: {'recall': np.float64(0.667), 'specificity': np.float64(0.778), 'precision': np.float64(0.667), 'NPV': np.float64(0.778), 'F1': np.float64(0.667)}
+
+non_adherence         RB: {'recall': np.float64(0.429), 'specificity': np.float64(1.0), 'precision': np.float64(1.0), 'NPV': np.float64(0.667), 'F1': np.float64(0.6)}
+                      NER: {'recall': np.float64(0.429), 'specificity': np.float64(0.875), 'precision': np.float64(0.75), 'NPV': np.float64(0.636), 'F1': np.float64(0.545)}
+
+--- Validation set ---
+
+language_barrier      RB: {'recall': np.float64(0.375), 'specificity': np.float64(1.0), 'precision': np.float64(1.0), 'NPV': np.float64(0.583), 'F1': np.float64(0.545)}
+                      NER: {'recall': np.float64(0.875), 'specificity': np.float64(1.0), 'precision': np.float64(1.0), 'NPV': np.float64(0.875), 'F1': np.float64(0.933)}
+
+living_alone          RB: {'recall': np.float64(0.833), 'specificity': np.float64(1.0), 'precision': np.float64(1.0), 'NPV': np.float64(0.9), 'F1': np.float64(0.909)}
+                      NER: {'recall': np.float64(0.667), 'specificity': np.float64(1.0), 'precision': np.float64(1.0), 'NPV': np.float64(0.818), 'F1': np.float64(0.8)}
+
+cognitive_frailty     RB: {'recall': np.float64(1.0), 'specificity': np.float64(0.889), 'precision': np.float64(0.857), 'NPV': np.float64(1.0), 'F1': np.float64(0.923)}
+                      NER: {'recall': np.float64(0.5), 'specificity': np.float64(0.778), 'precision': np.float64(0.6), 'NPV': np.float64(0.7), 'F1': np.float64(0.545)}
+
+non_adherence         RB: {'recall': np.float64(0.4), 'specificity': np.float64(1.0), 'precision': np.float64(1.0), 'NPV': np.float64(0.769), 'F1': np.float64(0.571)}
+                      NER: {'recall': np.float64(0.6), 'specificity': np.float64(1.0), 'precision': np.float64(1.0), 'NPV': np.float64(0.833), 'F1': np.float64(0.75)}
+
+All models and rules saved.
