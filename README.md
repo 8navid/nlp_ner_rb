@@ -2,6 +2,7 @@
 
 [![Python](https://img.shields.io/badge/Python-3.8%2B-blue.svg)](https://python.org)
 [![spaCy](https://img.shields.io/badge/spaCy-3.2-green.svg)](https://spacy.io)
+[![DeepSeek](https://img.shields.io/badge/DeepSeek-AI%20Generated-5364ff.svg)](https://deepseek.com)
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 An approach inspired by the **ten Hoope et al. (2025)** — *"Applying text-mining to clinical notes: the identification of patient characteristics from electronic health records (EHRs)"* — *BMC Medical Informatics and Decision Making*, 25(Suppl 3), 302. [https://doi.org/10.1186/s12911-025-03137-x](https://doi.org/10.1186/s12911-025-03137-x)
@@ -9,10 +10,13 @@ An approach inspired by the **ten Hoope et al. (2025)** — *"Applying text-mini
 This repository compares **rule-based SQL-like queries** with **spaCy v3.2's default transition-based NER architecture** (`MultiHashEmbed` token encoder → 4-layer `MaxoutWindowEncoder` CNN with residual connections → stack/buffer parser predicting BILUO actions), trained from scratch without pre-trained embeddings on manually annotated clinical notes, to extract four patient characteristics: **language barrier**, **living alone**, **cognitive frailty**, and **non-adherence**. Evaluation uses recall, specificity, precision, NPV, and F1-score on held-out test and validation sets.
 
 ---
+## Data Source
+
+The synthetic clinical notes used in this repository(dataset.json) were generated with the assistance of **DeepSeek AI** for educational and research purposes.
 
 ## Data Format
 
-Each entry in `dataset_with_entities.json` contains a clinical note, binary labels, and character-level entity span annotations:
+Each entry in `dataset.json` contains a clinical note, binary labels, and character-level entity span annotations:
 
 ```json
 {
