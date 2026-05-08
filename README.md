@@ -59,9 +59,6 @@ living_alone          Rule‑based: True    NER: True
 cognitive_frailty     Rule‑based: True    NER: True
 non_adherence         Rule‑based: True    NER: True
 ```
-```
 
-
----
 
 provided by navid danaee 8navid@gmail.com.
