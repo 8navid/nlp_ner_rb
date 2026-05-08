@@ -32,3 +32,42 @@ This repository applies two text‑mining techniques to extract four patient cha
 ---
 
 ## Repository Structure
+.
+├── dataset_with_entities.json # 100 synthetic clinical notes with manual entity spans
+├── article.py # Main script: training + evaluation
+├── predict.py # Interactive prediction on new notes
+├── models_language_barrier/ # Saved spaCy NER model (after training)
+├── models_living_alone/ # Saved spaCy NER model
+├── models_cognitive_frailty/ # Saved spaCy NER model
+├── models_non_adherence/ # Saved spaCy NER model
+├── rules/ # JSON files with inclusion/exclusion regex patterns
+│ ├── language_barrier.json
+│ ├── living_alone.json
+│ ├── cognitive_frailty.json
+│ └── non_adherence.json
+├── report.txt # Training loss + evaluation metrics
+└── README.md
+
+---
+## Data Format
+
+Each entry in `dataset_with_entities.json` follows the format:
+
+```json
+{
+  "patient_id": 1,
+  "note": "Patient speaks only Mandarin ...",
+  "labels": {
+    "language_barrier": true,
+    "living_alone": true,
+    "cognitive_frailty": false,
+    "non_adherence": true
+  },
+  "entities": [
+    [0, 30, "LANGUAGE_BARRIER"],
+    [78, 102, "LIVING_ALONE"],
+    [140, 165, "NON_ADHERENCE"]
+  ]
+}
+
+The entities field contains character‑level span annotations (start, end, label) — exactly as two human annotators would produce. These spans are used to train the NER models from scratch.
